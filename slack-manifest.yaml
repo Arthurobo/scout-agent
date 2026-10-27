@@ -1,0 +1,26 @@
+display_information:
+  name: Scout
+  description: Hiring sourcing agent with human approval
+features:
+  bot_user:
+    display_name: Scout
+    always_online: true
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - channels:history
+      - chat:write
+      - reactions:write
+settings:
+  event_subscriptions:
+    request_url: https://REPLACE-WITH-ENDPOINT-URL
+    bot_events:
+      - app_mention
+      - message.channels
+  interactivity:
+    is_enabled: true
+    request_url: https://REPLACE-WITH-ENDPOINT-URL
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
